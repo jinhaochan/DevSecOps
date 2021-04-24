@@ -77,3 +77,19 @@ Integrating Security and Automation
 - SSL Testing (Misconfiguration of SSL)
     - SSLLabs-Scan
     - SSLyze
+
+Secure code Inspection (Whitebox Testing)
+---
+
+- Grepping of certain security issues:
+    - Weak Encryption Algorithms
+    - Insecure Protocols
+    - Risky Functions calls (Deseralization, Exec, Shell Execute)
+
+- Tools
+    - SWAMP (Software Assurance Marketplace)
+    - CRASS (Code Review Audit Script Scanner)
+    - VCG (Visual Code Grepper)
+
+
+
