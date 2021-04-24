@@ -92,4 +92,33 @@ Secure code Inspection (Whitebox Testing)
     - VCG (Visual Code Grepper)
 
 
+Sensitive Information and Privacy Testing
+---
+
+Finding sensitive information in:
+1. Source code
+2. Application
+3. Database
+
+Classifications of Sensitive Information
+1. PII
+    - Credit Card Number
+    - IC Number
+    - Email Addresses
+    - Phone Numbers
+    - ...
+3. Application/System information
+    - Passwords
+    - API Keys
+    - Private Keys
+    - Hashes
+    - SQL Statements
+    - IP Addresses
+    - ...
+
+
+API Fuzzing and Testing
+---
+
+Focus is on Data Injection and Abnormal Payloads
 
