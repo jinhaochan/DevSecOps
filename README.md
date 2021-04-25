@@ -122,3 +122,39 @@ API Fuzzing and Testing
 
 Focus is on Data Injection and Abnormal Payloads
 
+Tools for API Testing
+
+- Sending Inputs
+    - FuzzDB
+    - Radamsa
+    - NaughtyStrings
+    - SecList
+- Sending Data to the API
+    - curl
+    - Postman
+- Processing Response Data
+    - ASTRA
+    - ZAP + OpenAPI
+    - JMeter
+    - Other API testing frameworks
+
+
+Web Application Security Testing
+---
+
+1. ZAP Spider Scan
+    - Uncovers all paths in the web application
+    - Monitors Requests and Responses for security issues (HTTP headers)
+2. ZAP Active Scan
+    - Sends malicious inputs to the paths in the application
+
+ZAP + Web Automation using Selenium
+
+Selenium does some web automation, such as logging in, or activating certain functions. These will help guide ZAP in the security scanning
+
+
+Android Security Testing
+---
+
+
+
