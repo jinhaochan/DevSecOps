@@ -156,5 +156,64 @@ Selenium does some web automation, such as logging in, or activating certain fun
 Android Security Testing
 ---
 
+Approaches:
+1. Secure Code Scanning
+    - SQL Injection
+    - Command Injection
+    - SSL Handling
+    - WebView XSS
+    - Insecure File Access
+    - Insecure Communication
+3. Sensitive Information Scanning
+    - Telephone Identifiers
+    - Audio/Video Interception
+    - Suspicious Backdoor Connection
+    - SMS and Call Abuse
+    - Data Leakage
+    - Root Behaviors
+5. APK Security Scanning
+    - Tools: Androwarn
+7. Static + Dynmaic Scanning
+    - Tools: MobSF
+
+
+Infrastructure Security
+---
+
+
+Components:
+1. Operating Systems
+2. Virtualizations
+3. Containers
+4. Web Services
+5. Databases
+6. Communications
+
+Guidelines for Infrastructure Security Configuration
+- Center for Internet Security
+    - Desktop and Browsers
+    - Mobile devices
+    - Network devices
+    - Security Metrics
+    - Servers
+    - Virtualization
+    - Cloud
+- Security Technical Implementation Guides (STIGs)
+    - Application Security
+- OpenSCAP Security Guideline
+    - Operating System Security
+
+Scanning Approaches
+- nmap VulnScan
+    - Scans network vulnerability
+- OWASP Dependency Checks
+    - Scans local files, libraries for vulnerabilities
+
+Checking HTTPS Security with SSLyze
+- Checks for weak cipher suites, insecure renegotiation, Heartbleed attack, invalid certificates and secure/deprecated protocols
+
+
+
+
 
 
