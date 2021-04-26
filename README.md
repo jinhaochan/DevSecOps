@@ -3,6 +3,53 @@ Practical Security Automation and Testing
 
 This README provides an overview of security testing in DevSecOps
 
+TLDR
+--
+
+- Automated Testing Frameworks
+    - Selenium
+- Secure Code Review
+    - Insecure Function Calls
+        - `exec`
+        - Shell execution
+    - Insecure Data
+        - Private keys
+        - Hashes
+    - Private Data
+        - PII
+        - IC Number
+        - Email Address
+        - Phone Number
+- API Testing
+    - ZAP
+    - Selenium
+    - Postman
+    - wfuzz
+    - radamsa
+    - 0d1n
+- Infrastructure Testing
+    - Network Scanning
+        - Namp
+    - Component Scanning
+        - OWASP Dependency Checking
+        - Retire.js
+    - Server Hardening Configuration
+        - STIGs
+        - OpenSCAP
+- Web Security Testing
+    - ZAP Simple Scan
+    - Run ZAP in Proxy mode to inspect HTTP requests/responses
+    - Run Selenium through ZAP Proxy
+- Android Testing
+    - Secure Code Scanning
+        - Fireline
+    - Privacy and Sensitive Information Scanning
+        - Androwarn
+    - APK Scanning
+        - QARK
+    - All-In-One Scanning
+        - MobSF
+
 Scope and Challenges of Security Automation
 ---
 
@@ -180,7 +227,6 @@ Approaches:
 Infrastructure Security
 ---
 
-
 Components:
 1. Operating Systems
 2. Virtualizations
@@ -212,8 +258,79 @@ Scanning Approaches
 Checking HTTPS Security with SSLyze
 - Checks for weak cipher suites, insecure renegotiation, Heartbleed attack, invalid certificates and secure/deprecated protocols
 
+Behavior Driven Development
+---
 
+Used to improve the communication of the nature of the security testing to all functional teams involved
 
+Security Testing Communication using GWT Scenarios (Given, When, Then)
+
+Robot Framework
+- Robot Framework makes it easier to understand the intent of the test using keywords such as `Execute Command` and `Should Not Contain`
+- You can integrate security tools such as ZAP with Robot Framework
+
+Selecting Tools for Automation
+---
+
+- Is it open source?
+- Is it cross platform
+- What interfaces are there? (GUI vs headless)
+- What is the reporting format?
+
+Testing Frameworks (such as Robot Framework) wraps around the security tools to perform security testing of the application. This includes performing the tests, and generating the reports
+
+Recommended tools:
+- ZAP
+- Robot Framework
+- Selenium (for Web UI automation)
+- Nmap (Network scanner)
+- Postman (Sending HTTP requests)
+- sslScan (Scans vulnerable SSL)
+- wfuzz (Fuzzing HTTP Requests)
+- Retire.js (Scan vulnerable Javascript libraries)
+
+Case Study for Web Security
+---
+
+Automated Testing of Web Application
+- ZAP
+- Selenium
+- FuzzDB
+
+Steps
+- ZAP simple scan for injection vulnerabilities
+- Automated Web UI steps with Selenium (such as user login)
+- Run ZAP in Proxy mode to monitor the HTTP requests/reponses
+- Run Fuzzing for XSS and SQLi
+
+Case Study for API Testing
+---
+
+Data Sources:
+- FuzzDB
+- Naughty Strings
+- SecList
+- Radamsa
+
+Fuzzing Tools:
+- wfuzz
+- 0d1n
+
+Testing Frameworks
+- Selenium
+- Robot Framework
+
+Case Study for Infrastructure Testing
+---
+
+- Scan for JavasScript Vulnerabilities
+    - Retire.js
+- Scan for Vulnerable Dependencies
+    - OWASP Dependency Check
+- Scan for Secure Communication
+    - SSLScan
+- Scan for Secure Networking
+    - Nmap
 
 
 
