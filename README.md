@@ -8,7 +8,7 @@ TLDR
 
 - Automated Testing Frameworks
     - Selenium
-- Secure Code Review
+- Secure Code Review (Grepping stuff)
     - Insecure Function Calls
         - `exec`
         - Shell execution
